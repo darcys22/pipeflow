@@ -33,7 +33,8 @@ function calculate() {
   window.ManningsCapacityGravityFlowFull = ((window.AreaXSect*(Math.pow(window.HydraulicRadius,2/3))*(Math.pow(window.Grade/100,0.5)))/window.ManningsCoefficient)*1000;
 
   console.log(window.AreaXSect);
-  window.ColebrookWhiteCapacityFull = -2*Math.sqrt(19.6*window.InternalDiameter2*window.Grade)*Math.log10((window.SurfaceRoughness/(3.7*window.InternalDiameter2))+((2.51*window.KinematicViscosity15DegC)/(window.InternalDiameter2*Math.sqrt(19.6*window.InternalDiameter2*(window.Grade/100)))))*window.AreaXSect*1000;
+
+  window.ColebrookWhiteCapacityFull = -2*Math.sqrt(19.6*window.InternalDiameter2*window.Grade/100)*Math.log10((window.SurfaceRoughness/(3.7*window.InternalDiameter2))+((2.51*window.KinematicViscosity15DegC)/(window.InternalDiameter2*Math.sqrt(19.6*window.InternalDiameter2*(window.Grade/100)))))*window.AreaXSect*1000;
 
   update();
 }
