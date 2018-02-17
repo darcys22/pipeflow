@@ -47,14 +47,41 @@
                 <legend>Inputs</legend>
                 <div id="calc-board">
                       <div class="form-row">
-                          <label for="c2"></label>
-                          <div class="input-group"> 
-                              <input type="number" value="50" min="0" max="100" step="1" data-number-to-fixed="0" data-number-stepfactor="1" class="form-control" id="flowpercentInput" onclick="this.select()" />
-                              <span class="input-group-addon">%</span>
-                          </div> 
-                        </div>
-                        <hr>
+                          <label for="c2">Internal Diameter</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
                       </div>
+                      <div class="form-row">
+                          <label for="c2">US Invert</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <div class="form-row">
+                          <label for="c2">DS Invert</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <div class="form-row">
+                          <label for="c2">Length</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <div class="form-row">
+                          <label for="c2">n: Mannings Coefficient</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <div class="form-row">
+                          <label for="c2">k: mm Pipe Roughness</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <div class="form-row">
+                          <label for="c2">c: Hazen Williams Coefficient</label>
+                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                      </div>
+                      <hr>
+                      <div class="form-row">
+                        <div class="input-group"> 
+                            <input type="number" value="50" min="0" max="100" step="1" data-number-to-fixed="0" data-number-stepfactor="1" class="form-control" id="flowpercentInput" onclick="this.select()" />
+                            <span class="input-group-addon">%</span>
+                        </div> 
+                      </div>
+                </div>
 
               </div>
             </div>
@@ -63,6 +90,62 @@
                 <legend>Calculation</legend>
                 <div id="calc-panel">
                   <div class="price-form"></div>
+                  <div class="form-group">
+                    <div class="row">
+                    </div>
+                      <div class="row">
+                        <div class="col-sm-6">Flow (l/s):</div>
+                        <div class="col-sm-6" id="flow"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Mannings Capacity (l/s):</div>
+                        <div class="col-sm-6" id="ManningsCap"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">HGL Capacity (l/s):</div>
+                        <div class="col-sm-6" id="HGLCAP"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Mannings Roughness:</div>
+                        <div class="col-sm-6" id="ManningsRough"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Pipe Roughness:</div>
+                        <div class="col-sm-6" id="PipeRough"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Velocity (m/s):</div>
+                        <div class="col-sm-6" id="Velocity"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Part Velocity (m/s):</div>
+                        <div class="col-sm-6" id="PartVelocity"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Velocity Head (m):</div>
+                        <div class="col-sm-6" id="VelocityHead"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Part Flow Depth (m):</div>
+                        <div class="col-sm-6" id="PartFlow"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Friction Slope (%):</div>
+                        <div class="col-sm-6" id="FrictionSlope"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Friction Loss (m):</div>
+                        <div class="col-sm-6" id="FrictionLoss"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Upstream Pit Loss (m):</div>
+                        <div class="col-sm-6" id="PitLoss"></div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">Upstream Pit Loss Coeff:</div>
+                        <div class="col-sm-6" id="PitLossCoeff"></div>
+                      </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -121,14 +204,11 @@
       </div>
     </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-au.js"></script> 
-    <script type="text/javascript" src="js/TPLib/estimator.js"></script> 
     <script type="text/javascript" src="js/main.js"></script> 
   </body>
   <div id="footer">
     <p class="darcy">
-      Tax Payable Calculator
+      Flow Calculator
       <br>
     </p>
     <p class="copyright">
