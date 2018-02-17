@@ -1,0 +1,1282 @@
+@keyframes fillin1 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 1%;
+  }
+}
+.circle[data-percent="1"]:before {
+  animation: 1s fillin1 ease forwards;
+}
+
+@keyframes fillin2 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 2%;
+  }
+}
+.circle[data-percent="2"]:before {
+  animation: 1s fillin2 ease forwards;
+}
+
+@keyframes fillin3 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 3%;
+  }
+}
+.circle[data-percent="3"]:before {
+  animation: 1s fillin3 ease forwards;
+}
+
+@keyframes fillin4 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 4%;
+  }
+}
+.circle[data-percent="4"]:before {
+  animation: 1s fillin4 ease forwards;
+}
+
+@keyframes fillin5 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 5%;
+  }
+}
+.circle[data-percent="5"]:before {
+  animation: 1s fillin5 ease forwards;
+}
+
+@keyframes fillin6 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 6%;
+  }
+}
+.circle[data-percent="6"]:before {
+  animation: 1s fillin6 ease forwards;
+}
+
+@keyframes fillin7 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 7%;
+  }
+}
+.circle[data-percent="7"]:before {
+  animation: 1s fillin7 ease forwards;
+}
+
+@keyframes fillin8 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 8%;
+  }
+}
+.circle[data-percent="8"]:before {
+  animation: 1s fillin8 ease forwards;
+}
+
+@keyframes fillin9 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 9%;
+  }
+}
+.circle[data-percent="9"]:before {
+  animation: 1s fillin9 ease forwards;
+}
+
+@keyframes fillin10 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 10%;
+  }
+}
+.circle[data-percent="10"]:before {
+  animation: 1s fillin10 ease forwards;
+}
+
+@keyframes fillin11 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 11%;
+  }
+}
+.circle[data-percent="11"]:before {
+  animation: 1s fillin11 ease forwards;
+}
+
+@keyframes fillin12 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 12%;
+  }
+}
+.circle[data-percent="12"]:before {
+  animation: 1s fillin12 ease forwards;
+}
+
+@keyframes fillin13 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 13%;
+  }
+}
+.circle[data-percent="13"]:before {
+  animation: 1s fillin13 ease forwards;
+}
+
+@keyframes fillin14 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 14%;
+  }
+}
+.circle[data-percent="14"]:before {
+  animation: 1s fillin14 ease forwards;
+}
+
+@keyframes fillin15 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 15%;
+  }
+}
+.circle[data-percent="15"]:before {
+  animation: 1s fillin15 ease forwards;
+}
+
+@keyframes fillin16 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 16%;
+  }
+}
+.circle[data-percent="16"]:before {
+  animation: 1s fillin16 ease forwards;
+}
+
+@keyframes fillin17 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 17%;
+  }
+}
+.circle[data-percent="17"]:before {
+  animation: 1s fillin17 ease forwards;
+}
+
+@keyframes fillin18 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 18%;
+  }
+}
+.circle[data-percent="18"]:before {
+  animation: 1s fillin18 ease forwards;
+}
+
+@keyframes fillin19 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 19%;
+  }
+}
+.circle[data-percent="19"]:before {
+  animation: 1s fillin19 ease forwards;
+}
+
+@keyframes fillin20 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 20%;
+  }
+}
+.circle[data-percent="20"]:before {
+  animation: 1s fillin20 ease forwards;
+}
+
+@keyframes fillin21 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 21%;
+  }
+}
+.circle[data-percent="21"]:before {
+  animation: 1s fillin21 ease forwards;
+}
+
+@keyframes fillin22 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 22%;
+  }
+}
+.circle[data-percent="22"]:before {
+  animation: 1s fillin22 ease forwards;
+}
+
+@keyframes fillin23 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 23%;
+  }
+}
+.circle[data-percent="23"]:before {
+  animation: 1s fillin23 ease forwards;
+}
+
+@keyframes fillin24 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 24%;
+  }
+}
+.circle[data-percent="24"]:before {
+  animation: 1s fillin24 ease forwards;
+}
+
+@keyframes fillin25 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 25%;
+  }
+}
+.circle[data-percent="25"]:before {
+  animation: 1s fillin25 ease forwards;
+}
+
+@keyframes fillin26 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 26%;
+  }
+}
+.circle[data-percent="26"]:before {
+  animation: 1s fillin26 ease forwards;
+}
+
+@keyframes fillin27 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 27%;
+  }
+}
+.circle[data-percent="27"]:before {
+  animation: 1s fillin27 ease forwards;
+}
+
+@keyframes fillin28 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 28%;
+  }
+}
+.circle[data-percent="28"]:before {
+  animation: 1s fillin28 ease forwards;
+}
+
+@keyframes fillin29 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 29%;
+  }
+}
+.circle[data-percent="29"]:before {
+  animation: 1s fillin29 ease forwards;
+}
+
+@keyframes fillin30 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 30%;
+  }
+}
+.circle[data-percent="30"]:before {
+  animation: 1s fillin30 ease forwards;
+}
+
+@keyframes fillin31 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 31%;
+  }
+}
+.circle[data-percent="31"]:before {
+  animation: 1s fillin31 ease forwards;
+}
+
+@keyframes fillin32 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 32%;
+  }
+}
+.circle[data-percent="32"]:before {
+  animation: 1s fillin32 ease forwards;
+}
+
+@keyframes fillin33 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 33%;
+  }
+}
+.circle[data-percent="33"]:before {
+  animation: 1s fillin33 ease forwards;
+}
+
+@keyframes fillin34 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 34%;
+  }
+}
+.circle[data-percent="34"]:before {
+  animation: 1s fillin34 ease forwards;
+}
+
+@keyframes fillin35 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 35%;
+  }
+}
+.circle[data-percent="35"]:before {
+  animation: 1s fillin35 ease forwards;
+}
+
+@keyframes fillin36 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 36%;
+  }
+}
+.circle[data-percent="36"]:before {
+  animation: 1s fillin36 ease forwards;
+}
+
+@keyframes fillin37 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 37%;
+  }
+}
+.circle[data-percent="37"]:before {
+  animation: 1s fillin37 ease forwards;
+}
+
+@keyframes fillin38 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 38%;
+  }
+}
+.circle[data-percent="38"]:before {
+  animation: 1s fillin38 ease forwards;
+}
+
+@keyframes fillin39 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 39%;
+  }
+}
+.circle[data-percent="39"]:before {
+  animation: 1s fillin39 ease forwards;
+}
+
+@keyframes fillin40 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 40%;
+  }
+}
+.circle[data-percent="40"]:before {
+  animation: 1s fillin40 ease forwards;
+}
+
+@keyframes fillin41 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 41%;
+  }
+}
+.circle[data-percent="41"]:before {
+  animation: 1s fillin41 ease forwards;
+}
+
+@keyframes fillin42 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 42%;
+  }
+}
+.circle[data-percent="42"]:before {
+  animation: 1s fillin42 ease forwards;
+}
+
+@keyframes fillin43 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 43%;
+  }
+}
+.circle[data-percent="43"]:before {
+  animation: 1s fillin43 ease forwards;
+}
+
+@keyframes fillin44 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 44%;
+  }
+}
+.circle[data-percent="44"]:before {
+  animation: 1s fillin44 ease forwards;
+}
+
+@keyframes fillin45 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 45%;
+  }
+}
+.circle[data-percent="45"]:before {
+  animation: 1s fillin45 ease forwards;
+}
+
+@keyframes fillin46 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 46%;
+  }
+}
+.circle[data-percent="46"]:before {
+  animation: 1s fillin46 ease forwards;
+}
+
+@keyframes fillin47 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 47%;
+  }
+}
+.circle[data-percent="47"]:before {
+  animation: 1s fillin47 ease forwards;
+}
+
+@keyframes fillin48 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 48%;
+  }
+}
+.circle[data-percent="48"]:before {
+  animation: 1s fillin48 ease forwards;
+}
+
+@keyframes fillin49 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 49%;
+  }
+}
+.circle[data-percent="49"]:before {
+  animation: 1s fillin49 ease forwards;
+}
+
+@keyframes fillin50 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 50%;
+  }
+}
+.circle[data-percent="50"]:before {
+  animation: 1s fillin50 ease forwards;
+}
+
+@keyframes fillin51 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 51%;
+  }
+}
+.circle[data-percent="51"]:before {
+  animation: 1s fillin51 ease forwards;
+}
+
+@keyframes fillin52 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 52%;
+  }
+}
+.circle[data-percent="52"]:before {
+  animation: 1s fillin52 ease forwards;
+}
+
+@keyframes fillin53 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 53%;
+  }
+}
+.circle[data-percent="53"]:before {
+  animation: 1s fillin53 ease forwards;
+}
+
+@keyframes fillin54 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 54%;
+  }
+}
+.circle[data-percent="54"]:before {
+  animation: 1s fillin54 ease forwards;
+}
+
+@keyframes fillin55 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 55%;
+  }
+}
+.circle[data-percent="55"]:before {
+  animation: 1s fillin55 ease forwards;
+}
+
+@keyframes fillin56 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 56%;
+  }
+}
+.circle[data-percent="56"]:before {
+  animation: 1s fillin56 ease forwards;
+}
+
+@keyframes fillin57 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 57%;
+  }
+}
+.circle[data-percent="57"]:before {
+  animation: 1s fillin57 ease forwards;
+}
+
+@keyframes fillin58 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 58%;
+  }
+}
+.circle[data-percent="58"]:before {
+  animation: 1s fillin58 ease forwards;
+}
+
+@keyframes fillin59 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 59%;
+  }
+}
+.circle[data-percent="59"]:before {
+  animation: 1s fillin59 ease forwards;
+}
+
+@keyframes fillin60 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 60%;
+  }
+}
+.circle[data-percent="60"]:before {
+  animation: 1s fillin60 ease forwards;
+}
+
+@keyframes fillin61 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 61%;
+  }
+}
+.circle[data-percent="61"]:before {
+  animation: 1s fillin61 ease forwards;
+}
+
+@keyframes fillin62 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 62%;
+  }
+}
+.circle[data-percent="62"]:before {
+  animation: 1s fillin62 ease forwards;
+}
+
+@keyframes fillin63 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 63%;
+  }
+}
+.circle[data-percent="63"]:before {
+  animation: 1s fillin63 ease forwards;
+}
+
+@keyframes fillin64 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 64%;
+  }
+}
+.circle[data-percent="64"]:before {
+  animation: 1s fillin64 ease forwards;
+}
+
+@keyframes fillin65 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 65%;
+  }
+}
+.circle[data-percent="65"]:before {
+  animation: 1s fillin65 ease forwards;
+}
+
+@keyframes fillin66 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 66%;
+  }
+}
+.circle[data-percent="66"]:before {
+  animation: 1s fillin66 ease forwards;
+}
+
+@keyframes fillin67 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 67%;
+  }
+}
+.circle[data-percent="67"]:before {
+  animation: 1s fillin67 ease forwards;
+}
+
+@keyframes fillin68 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 68%;
+  }
+}
+.circle[data-percent="68"]:before {
+  animation: 1s fillin68 ease forwards;
+}
+
+@keyframes fillin69 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 69%;
+  }
+}
+.circle[data-percent="69"]:before {
+  animation: 1s fillin69 ease forwards;
+}
+
+@keyframes fillin70 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 70%;
+  }
+}
+.circle[data-percent="70"]:before {
+  animation: 1s fillin70 ease forwards;
+}
+
+@keyframes fillin71 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 71%;
+  }
+}
+.circle[data-percent="71"]:before {
+  animation: 1s fillin71 ease forwards;
+}
+
+@keyframes fillin72 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 72%;
+  }
+}
+.circle[data-percent="72"]:before {
+  animation: 1s fillin72 ease forwards;
+}
+
+@keyframes fillin73 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 73%;
+  }
+}
+.circle[data-percent="73"]:before {
+  animation: 1s fillin73 ease forwards;
+}
+
+@keyframes fillin74 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 74%;
+  }
+}
+.circle[data-percent="74"]:before {
+  animation: 1s fillin74 ease forwards;
+}
+
+@keyframes fillin75 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 75%;
+  }
+}
+.circle[data-percent="75"]:before {
+  animation: 1s fillin75 ease forwards;
+}
+
+@keyframes fillin76 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 76%;
+  }
+}
+.circle[data-percent="76"]:before {
+  animation: 1s fillin76 ease forwards;
+}
+
+@keyframes fillin77 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 77%;
+  }
+}
+.circle[data-percent="77"]:before {
+  animation: 1s fillin77 ease forwards;
+}
+
+@keyframes fillin78 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 78%;
+  }
+}
+.circle[data-percent="78"]:before {
+  animation: 1s fillin78 ease forwards;
+}
+
+@keyframes fillin79 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 79%;
+  }
+}
+.circle[data-percent="79"]:before {
+  animation: 1s fillin79 ease forwards;
+}
+
+@keyframes fillin80 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 80%;
+  }
+}
+.circle[data-percent="80"]:before {
+  animation: 1s fillin80 ease forwards;
+}
+
+@keyframes fillin81 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 81%;
+  }
+}
+.circle[data-percent="81"]:before {
+  animation: 1s fillin81 ease forwards;
+}
+
+@keyframes fillin82 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 82%;
+  }
+}
+.circle[data-percent="82"]:before {
+  animation: 1s fillin82 ease forwards;
+}
+
+@keyframes fillin83 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 83%;
+  }
+}
+.circle[data-percent="83"]:before {
+  animation: 1s fillin83 ease forwards;
+}
+
+@keyframes fillin84 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 84%;
+  }
+}
+.circle[data-percent="84"]:before {
+  animation: 1s fillin84 ease forwards;
+}
+
+@keyframes fillin85 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 85%;
+  }
+}
+.circle[data-percent="85"]:before {
+  animation: 1s fillin85 ease forwards;
+}
+
+@keyframes fillin86 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 86%;
+  }
+}
+.circle[data-percent="86"]:before {
+  animation: 1s fillin86 ease forwards;
+}
+
+@keyframes fillin87 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 87%;
+  }
+}
+.circle[data-percent="87"]:before {
+  animation: 1s fillin87 ease forwards;
+}
+
+@keyframes fillin88 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 88%;
+  }
+}
+.circle[data-percent="88"]:before {
+  animation: 1s fillin88 ease forwards;
+}
+
+@keyframes fillin89 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 89%;
+  }
+}
+.circle[data-percent="89"]:before {
+  animation: 1s fillin89 ease forwards;
+}
+
+@keyframes fillin90 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 90%;
+  }
+}
+.circle[data-percent="90"]:before {
+  animation: 1s fillin90 ease forwards;
+}
+
+@keyframes fillin91 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 91%;
+  }
+}
+.circle[data-percent="91"]:before {
+  animation: 1s fillin91 ease forwards;
+}
+
+@keyframes fillin92 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 92%;
+  }
+}
+.circle[data-percent="92"]:before {
+  animation: 1s fillin92 ease forwards;
+}
+
+@keyframes fillin93 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 93%;
+  }
+}
+.circle[data-percent="93"]:before {
+  animation: 1s fillin93 ease forwards;
+}
+
+@keyframes fillin94 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 94%;
+  }
+}
+.circle[data-percent="94"]:before {
+  animation: 1s fillin94 ease forwards;
+}
+
+@keyframes fillin95 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 95%;
+  }
+}
+.circle[data-percent="95"]:before {
+  animation: 1s fillin95 ease forwards;
+}
+
+@keyframes fillin96 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 96%;
+  }
+}
+.circle[data-percent="96"]:before {
+  animation: 1s fillin96 ease forwards;
+}
+
+@keyframes fillin97 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 97%;
+  }
+}
+.circle[data-percent="97"]:before {
+  animation: 1s fillin97 ease forwards;
+}
+
+@keyframes fillin98 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 98%;
+  }
+}
+.circle[data-percent="98"]:before {
+  animation: 1s fillin98 ease forwards;
+}
+
+@keyframes fillin99 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 99%;
+  }
+}
+.circle[data-percent="99"]:before {
+  animation: 1s fillin99 ease forwards;
+}
+
+@keyframes fillin100 {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.circle[data-percent="100"]:before {
+  animation: 1s fillin100 ease forwards;
+}
+
+body {
+  background-color: #ddd;
+  font-family: Helvetica, sans-serif;
+}
+
+.wrap {
+  margin: 50px auto 0;
+  width: 600px;
+}
+.wrap h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 2em;
+  color: #555;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.circle:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100px;
+  height: 0;
+}
+.circle:after {
+  content: attr(data-percent);
+  position: absolute;
+  font-size: 2.5em;
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  margin-top: -22px;
+}
+
+.circle.gray {
+  border: 1px solid #C3C3C3;
+}
+.circle.gray:before {
+  background-color: #C3C3C3;
+}
+.circle.gray:after {
+  color: #555555;
+}
+
+.circle.blue {
+  border: 1px solid #5FA5EA;
+}
+.circle.blue:before {
+  background-color: #5FA5EA;
+}
+.circle.blue:after {
+  color: #213374;
+}
+
+.circle.red {
+  border: 1px solid #D47474;
+}
+.circle.red:before {
+  background-color: #D47474;
+}
+.circle.red:after {
+  color: #6A0808;
+}
+
+.circle.green {
+  border: 1px solid #3BA66E;
+}
+.circle.green:before {
+  background-color: #3BA66E;
+}
+.circle.green:after {
+  color: #0C3F25;
+}
+

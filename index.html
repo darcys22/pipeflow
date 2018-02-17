@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Flow Calculator</title>
+    <meta name="description" content="Calculates Flow" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.png'/>
+  </head>
+  <body>
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Flow Calculator</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li> <a href="" data-toggle="modal" data-target="#settingsModal">Settings</a> </li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="container">
+
+					<div class="row-fluid">
+            <div class="span6 well">
+              <legend id="Title">Calculated Flow</legend>
+              <div class="row">
+              <div class="col-xs-2 col-xs-offset-5">
+                <div class="circle blue" id="circleflow" data-percent="50"></div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <div class="col-lg-6">
+
+              <div class="span6 well">
+                <legend>Inputs</legend>
+                <div id="calc-board">
+                      <div class="form-row">
+                          <label for="c2"></label>
+                          <div class="input-group"> 
+                              <input type="number" value="50" min="0" max="100" step="1" data-number-to-fixed="0" data-number-stepfactor="1" class="form-control" id="flowpercentInput" onclick="this.select()" />
+                              <span class="input-group-addon">%</span>
+                          </div> 
+                        </div>
+                        <hr>
+                      </div>
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="span6 well">
+                <legend>Calculation</legend>
+                <div id="calc-panel">
+                  <div class="price-form"></div>
+                </div>
+              </div>
+            </div>
+						<hr>
+
+		</div>
+
+    <div class="modal fade" id="settingsModal" tabindex="-1" role="dialog" aria-labelledby="settingsModal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4>Settings</h4>
+          </div>
+          <div class = "modal-body">
+            <form class="well form-horizontal" data-toggle="validator" action=" " method="post" role="form" id="payer_form">
+              <fieldset>
+                <!-- Text input-->
+                <div class="form-group col-md-9">
+                  <label class="col-md-4 control-label">Business Name</label>  
+                  <div class="col-md-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input  name="businessName" placeholder="Business Name" onchange="formatCapitalize(this);" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-md-3">
+                  <div class="inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                      <input  name="tradingName" onchange="formatCapitalize(this);" placeholder="Trading Name" class="form-control"  type="text" tabindex="-1">
+                    </div>
+                  </div>
+                </div>
+                <!-- Text input-->
+                <div class="form-group col-md-9">
+                  <label class="col-md-4 control-label">ABN</label>  
+                  <div class="col-md-8 inputGroupContainer">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-credit-card"></i></span>
+                      <input name="ABN" placeholder="ABN" class="form-control" pattern="^(\d *?){11}$" onChange="formatabntfn(this)" ondblclick="this.select()" type="text" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="col-md-10 control-label"></label>
+                  <div class="col-md-2">
+                    <button type="submit" class="btn btn-warning" >Save <span class="glyphicon glyphicon-user"></span></button>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/locale/en-au.js"></script> 
+    <script type="text/javascript" src="js/TPLib/estimator.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script> 
+  </body>
+  <div id="footer">
+    <p class="darcy">
+      Tax Payable Calculator
+      <br>
+    </p>
+    <p class="copyright">
+      Copyright © 2017
+      <a rel="author" href="http://www.darcyfinancial.com" target="_blank"><strong>Darcy Financial</strong></a>
+      <br>
+      Email:
+      <a href="mailto:sean@darcyfinancial.com">sean@darcyfinancial.com</a>
+    </p>
+  </div>
+</html>
+
+
