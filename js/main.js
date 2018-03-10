@@ -1,6 +1,12 @@
 
-$('#flowpercentInput').on('input', function () {
+$('input').on('input', function () {
     window.flow = stripwhitecommas($('#flowpercentInput').val());
+    window.InternalDiameter2 = stripwhitecommas($('#internaldiameterInput').val());
+    window.USInvert = stripwhitecommas($('#USInvertInput').val());
+    window.DSInvert = stripwhitecommas($('#DSInvertInput').val());
+    window.length = stripwhitecommas($('#lengthInput').val());
+    window.ManningsCoefficient = stripwhitecommas($('#manningsInput').val());
+    window.mmPipeRoughness = stripwhitecommas($('#piperoughnessInput').val());
     calculate();
 });
 $('#settingsModal').on('hidden.bs.modal', function () {
@@ -11,19 +17,14 @@ function editSettings() {
 }
 
 function calculate() {
-  if (window.flow < 0) {
-    window.flow = 0;
-  } else if (window.flow>100) {
-    window.flow = 100;
-  }
   window.PartFlowDepth = 0.417370290267081;
   window.UpstreamPitLossCoeff = 1;
-  window.decimalflow = window.flow/100;
-  window.USInvert = 126.7;
-  window.DSInvert = 126.37;
-  window.length = 50;
-  window.ManningsCoefficient = 0.013;
-  window.InternalDiameter2 = 0.534;
+  window.decimalflow = window.flow;
+  //window.USInvert = 126.7;
+  //window.DSInvert = 126.37;
+  //window.length = 50;
+  //window.ManningsCoefficient = 0.013;
+  //window.InternalDiameter2 = 0.534;
   window.InternalRadius = window.InternalDiameter2/2;
   window.AreaXSect = Math.pow(window.InternalRadius,2)*Math.PI;
   window.Velocity = window.decimalflow/window.AreaXSect;
@@ -59,27 +60,51 @@ function calculate() {
 
   window.ColebrookWhiteCapacityFull = -2*Math.sqrt(19.6*window.InternalDiameter2*window.Grade/100)*Math.log10((window.SurfaceRoughness/(3.7*window.InternalDiameter2))+((2.51*window.KinematicViscosity15DegC)/(window.InternalDiameter2*Math.sqrt(19.6*window.InternalDiameter2*(window.Grade/100)))))*window.AreaXSect*1000;
 
-  window.AboveSpringline = window.flow>(0.5*(ManningsCapacityGravityFlowFull/1000));
+  window.PartFlowDepth = numeric.uncmin(partialflowdelta,[window.InternalRadius]).solution[0];
+
+  window.AboveSpringline = window.decimalflow>(0.5*(ManningsCapacityGravityFlowFull/1000));
   if (window.AboveSpringline) {
-    window.SegmentH = window.InternalDiameter2 - window.PartFlowDepth
+    window.SegmentH = window.InternalDiameter2 - window.PartFlowDepth;
     window.SegmentTheta = 2*Math.acos((window.InternalRadius-window.SegmentH)/window.InternalRadius);
     window.SegmentA = (Math.PI*Math.pow(window.InternalRadius,2))-((Math.pow(window.InternalRadius,2)*(window.SegmentTheta-Math.sin(window.SegmentTheta)))/2)
     window.SegmentP = (2*Math.PI*window.InternalRadius)-(window.InternalRadius*window.SegmentTheta);
   } else {
-    window.SegmentH = window.PartFLowDepth
+    window.SegmentH = window.PartFlowDepth;
     window.SegmentTheta = 2*Math.acos((window.InternalRadius-window.SegmentH)/window.InternalRadius);
     window.SegmentA = (Math.pow(window.InternalRadius,2)*(window.SegmentTheta-Math.sin(window.SegmentTheta)))/2
     window.SegmentP = window.InternalRadius*window.SegmentTheta;
   }
   window.SegmentHydR = window.SegmentA/window.SegmentP;
   window.SegmentVelocity = window.decimalflow/window.SegmentA;
-  console.log(window.SegmentVelocity);
   update();
 }
 
+function partialflowdelta(y) {
+  var x = y[0]
+  var AboveSpringline = window.decimalflow>(0.5*(window.ManningsCapacityGravityFlowFull/1000));
+  if (AboveSpringline) {
+    var SegmentH = window.InternalDiameter2 - x
+    var SegmentTheta = 2*Math.acos((window.InternalRadius-SegmentH)/window.InternalRadius);
+    var SegmentA = (Math.PI*Math.pow(window.InternalRadius,2))-((Math.pow(window.InternalRadius,2)*(SegmentTheta-Math.sin(SegmentTheta)))/2)
+    var SegmentP = (2*Math.PI*window.InternalRadius)-(window.InternalRadius*SegmentTheta);
+  } else {
+    var SegmentH = x;
+    var SegmentTheta = 2*Math.acos((window.InternalRadius-SegmentH)/window.InternalRadius);
+    var SegmentA = (Math.pow(window.InternalRadius,2)*(SegmentTheta-Math.sin(SegmentTheta)))/2
+    var SegmentP = window.InternalRadius*SegmentTheta;
+  }
+  var SegmentHydR = SegmentA/SegmentP;
+  var SegmentVelocity = window.decimalflow/SegmentA;
+
+  var Side1 = Math.pow(SegmentA,(5/3))/Math.pow(SegmentP,(2/3))
+  var Side2 = window.ManningsCoefficient*window.decimalflow/Math.pow((window.Grade/100),0.5)
+
+  return Math.abs(Side1 - Side2);
+}
+
 function update() {
-  $("#circleflow").attr('data-percent',window.flow);
-  $("#flow").html(window.flow * 1000);
+  $("#circleflow").attr('data-percent',Math.round(window.PartFlowDepth/window.InternalDiameter2*100));
+  $("#flow").html(window.decimalflow * 1000);
   $("#ManningsCap").html(window.ManningsCapacityGravityFlowFull);
   $("#HGLCAP").html(window.ColebrookWhiteCapacityFull);
   $("#ManningsRough").html(window.ManningsCoefficient);
@@ -108,6 +133,7 @@ function formatcomma(element) {
 
 function main() {
   window.flow=35;
+
   calculate();
 }
 main();

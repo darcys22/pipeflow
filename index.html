@@ -52,34 +52,31 @@
                       </div>
                       <div class="form-row">
                           <label for="c2">US Invert</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="USInvertInput" onclick="this.select()" />
                       </div>
                       <div class="form-row">
                           <label for="c2">DS Invert</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="DSInvertInput" onclick="this.select()" />
                       </div>
                       <div class="form-row">
                           <label for="c2">Length</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="lengthInput" onclick="this.select()" />
                       </div>
                       <div class="form-row">
                           <label for="c2">n: Mannings Coefficient</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="manningsInput" onclick="this.select()" />
                       </div>
                       <div class="form-row">
                           <label for="c2">k: mm Pipe Roughness</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="piperoughnessInput" onclick="this.select()" />
                       </div>
                       <div class="form-row">
                           <label for="c2">c: Hazen Williams Coefficient</label>
-                          <input type="number" class="form-control" id="internaldiameterInput" onclick="this.select()" />
+                          <input type="number" class="form-control" id="hazenInput" onclick="this.select()" />
                       </div>
-                      <hr>
                       <div class="form-row">
-                        <div class="input-group"> 
-                            <input type="number" value="50" min="0" max="100" step="1" data-number-to-fixed="0" data-number-stepfactor="1" class="form-control" id="flowpercentInput" onclick="this.select()" />
-                            <span class="input-group-addon">%</span>
-                        </div> 
+                          <label for="c2">Flow</label>
+                          <input type="number" class="form-control" id="flowpercentInput" onclick="this.select()" />
                       </div>
                 </div>
 
@@ -204,6 +201,7 @@
       </div>
     </div>
     </div>
+    <script type="text/javascript" src="js/numeric-1.2.6.min.js"></script> 
     <script type="text/javascript" src="js/main.js"></script> 
   </body>
   <div id="footer">
